@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>IMOM - Algoritms</title>
+</head>
+<body>
+    <header>
+        <h1>CRIPTOGRAFÍA</h1>
+    </header>
+    <section id="mainSection">
+        <section>
+            <div>
+                <h2>Algoritmo AES</h2>
+            </div>
+            <div style="text-align: center;">
+                <label for="inputClaveAESGet">Clave</label>
+                <input type="text" id="inputClaveAESGet">
+                <label for="inputAESGet">Texto a cifrar:</label>
+                <input type="text" id="inputAESGet">
+                <p>Encriptación</p>
+                <p id="resultAES">---</p>
+                <label for="inputAESSecretKeySend">Clave:</label>
+                <input type="text" id="inputAESSecretKeySend">
+                <label for="inputAESSend">Texto a descifrar:</label>
+                <input type="text" id="inputAESSend">
+                <p>Texto original</p>
+                <p id="resultAESOrigin">---</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Función SHA256</h2>
+            </div>
+            <div>
+                <input type="text" id="inputSHA256">
+            </div>
+            <div>
+                <p>Result</p>
+                <p id="resultSHA256">---</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Algoritmo RSA</h2>
+            </div>
+            <div style="text-align: center;">
+                <label for="inputRSA">Texto a cifrar:</label>
+                <input type="text" id="inputRSA">
+                <p>Encriptación</p>
+                <p>Llave pública</p>
+                <p id="resultRSAPublicKey">---</p>
+                <p>Llave privada</p>
+                <p id="resultRSAPrivateKey">---</p>
+                <button type="button" onclick="copiarAlPortapapeles('resultRSAPrivateKey')">Copiar clave privada</button>
+                <p>Texto cifrado</p>
+                <p id="resultRSA">---</p>
+                <button type="button" onclick="copiarAlPortapapeles('resultRSA')">Copiar texto cifrado</button>
+                <br>
+                <label for="inputRSAPrivateKey">Clave privada:</label>
+                <input type="text" id="inputRSAPrivateKey">
+                <label for="inputRSAOriginal">Texto a descifrar:</label>
+                <input type="text" id="inputRSAOriginal">
+                <p>Texto original</p>
+                <p id="resultRSAOrigin">---</p>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <p>Iván Ornelas</p>
+    </footer>
+    <script src="./js/algoritms.js"></script>
+</body>
+</html>

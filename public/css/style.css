@@ -1,0 +1,66 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainSection{
+    padding: 10px;
+}
+
+
+#mainSection section div input{
+    display: flex;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainSection section div h2, p{
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: gainsboro;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#divGoToOtherPage{
+    text-align: right;
+}
+
+#divGoToOtherPage a{
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+#divGoToOtherPage :hover{
+    background-color: gray;
+    color: white;
+}
+
+#buttonGenerateCrypto{
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
